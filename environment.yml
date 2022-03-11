@@ -1,0 +1,10 @@
+name: cate-bench
+dependencies:
+- numpy
+- pandas
+- scikit-learn
+- scipy
+- pip:
+  - econml
+  - catboost
+  - lightgbm
