@@ -94,7 +94,7 @@ if __name__ == "__main__":
     models = (options.simple_models, options.meta_models, options.base_models)
     df_results = load_results(options.data_path, options.dtype, models, metrics)
 
-    df_results.to_csv(os.path.join(options.output_path, 'combined.csv'), index=False)
+    df_results.to_csv(os.path.join(options.output_path, f'{options.dtype}_combined.csv'), index=False)
 
     if options.show:
         print(df_results)
